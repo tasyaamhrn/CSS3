@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 1</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .container{
+            width:900px;
+            margin:10px auto;
+            border: 5px solid black;
+        }
+        /* kotak merupakan keadaan awal */
+        .kotak{
+            width: 100px;
+            height:100px;
+            background-color:lightgreen;
+            transition: 1s;
+        }
+        /* kotak hover merupakan keadaan akhir */
+        /* cara baca:ketika kursor diletakkan pada container maka class kotak akan berputar dan berpindah */
+        .container:hover .kotak{
+            transform: rotate(45deg);
+            margin-left: 800px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="kotak"></div>
+</div>
+</body>
+</html>
